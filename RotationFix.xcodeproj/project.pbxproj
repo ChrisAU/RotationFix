@@ -301,6 +301,7 @@
 				99CDCE501D5713A900B1C676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

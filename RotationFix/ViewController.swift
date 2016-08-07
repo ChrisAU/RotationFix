@@ -20,15 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate: Bool {
         return false
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
     
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
         return .portrait
     }
     

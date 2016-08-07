@@ -16,7 +16,7 @@ import UIKit
 
 class RotatingModalViewController : UIViewController {
     
-    private var canRotate: Bool = true
+    private var canRotate: Bool = false
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -26,15 +26,15 @@ class RotatingModalViewController : UIViewController {
         UIViewController.attemptRotationToDeviceOrientation()
     }
     
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate: Bool {
         return true
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return canRotate ? .allButUpsideDown : .portrait
     }
     
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
         return .portrait
     }
 }
